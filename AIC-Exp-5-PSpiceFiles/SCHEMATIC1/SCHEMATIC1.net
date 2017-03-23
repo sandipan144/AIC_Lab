@@ -1,0 +1,7 @@
+* source AIC-EXP-5
+X_U1         N00218 N00228 N000562 N000563 N00305 uA741
+V_V1         0 N000563 12Vdc
+V_V2         N000562 0 12Vdc
+V_V3         N00218 0  AC 1
++SIN 0 10V 1kHz 0 0 0
+V_V4         N00228 0 1Vdc

@@ -1,0 +1,167 @@
+
+**** 03/03/17 15:44:06 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-qwer"  [ C:\Users\Sandipan Chakraborty\Google Drive\AIC_Lab\AIC-Exp-5-Schmitt_Trigger-PSpiceFiles\SCHEMATIC1
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "qwer.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 10m 1m 0.01 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source AIC-EXP-5-SCHMITT_TRIGGER
+V_V3         N00725 0  AC 1
++SIN 0 10V 1kHz 0 0 0
+V_V2         N004872 0 12Vdc
+X_U1         N00936 N00725 N004872 N004873 N00982 uA741
+V_V1         0 N004873 12Vdc
+R_R1         0 N00936  10k TC=0,0 
+R_R2         N00982 N00936  15k TC=0,0 
+
+**** RESUMING qwer.cir ****
+.END
+
+**** 03/03/17 15:44:06 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-qwer"  [ C:\Users\Sandipan Chakraborty\Google Drive\AIC_Lab\AIC-Exp-5-Schmitt_Trigger-PSpiceFiles\SCHEMATIC1
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.dx         
+          IS  800.000000E-18 
+          RS    1            
+
+
+**** 03/03/17 15:44:06 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-qwer"  [ C:\Users\Sandipan Chakraborty\Google Drive\AIC_Lab\AIC-Exp-5-Schmitt_Trigger-PSpiceFiles\SCHEMATIC1
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.qx         
+               NPN             
+       LEVEL    1            
+          IS  800.000000E-18 
+          BF   93.75         
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 03/03/17 15:44:06 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-qwer"  [ C:\Users\Sandipan Chakraborty\Google Drive\AIC_Lab\AIC-Exp-5-Schmitt_Trigger-PSpiceFiles\SCHEMATIC1
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00725)    0.0000 (N00936)-19.25E-06 (N00982)     .0011 (X_U1.6)-109.9E-09     
+
+(X_U1.7)     .0012 (X_U1.8)     .0012 (X_U1.9)    0.0000 (N004872)   12.0000    
+
+(N004873)  -12.0000                   (X_U1.10)    -.6077                       
+
+(X_U1.11)   11.9600                   (X_U1.12)   11.9600                       
+
+(X_U1.13)    -.5938                   (X_U1.14)    -.5938                       
+
+(X_U1.53)   11.0000                   (X_U1.54)  -11.0000                       
+
+(X_U1.90) 77.80E-06                   (X_U1.91)   40.0000                       
+
+(X_U1.92)  -40.0000                   (X_U1.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3        -7.976E-08
+    V_V2        -1.337E-03
+    V_V1        -1.337E-03
+    X_U1.vb     -1.099E-12
+    X_U1.vc      1.100E-11
+    X_U1.ve      1.100E-11
+    X_U1.vlim    7.780E-08
+    X_U1.vlp    -4.000E-11
+    X_U1.vln    -4.000E-11
+
+    TOTAL POWER DISSIPATION   3.21E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 03/03/17 15:44:06 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-qwer"  [ C:\Users\Sandipan Chakraborty\Google Drive\AIC_Lab\AIC-Exp-5-Schmitt_Trigger-PSpiceFiles\SCHEMATIC1
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .06
+

@@ -1,0 +1,10 @@
+.ALIASES
+X_U1            U1(+=N00123 -=N00161 V+=N00390 V-=N00354 OUT=N00144 ) CN @EXP-3.SCHEMATIC1(sch_1):INS36@EVAL.uA741.Normal(chips)
+R_R1            R1(1=0 2=N00161 ) CN @EXP-3.SCHEMATIC1(sch_1):INS75@ANALOG.R.Normal(chips)
+R_R2            R2(1=0 2=N00123 ) CN @EXP-3.SCHEMATIC1(sch_1):INS91@ANALOG.R.Normal(chips)
+R_R3            R3(1=N00123 2=N00144 ) CN @EXP-3.SCHEMATIC1(sch_1):INS107@ANALOG.R.Normal(chips)
+C_C1            C1(1=N00209 2=N00161 ) CN @EXP-3.SCHEMATIC1(sch_1):INS184@ANALOG.C.Normal(chips)
+V_V1            V1(+=N00209 -=0 ) CN @EXP-3.SCHEMATIC1(sch_1):INS229@SOURCE.VAC.Normal(chips)
+V_V2            V2(+=N00354 -=0 ) CN @EXP-3.SCHEMATIC1(sch_1):INS321@SOURCE.VDC.Normal(chips)
+V_V3            V3(+=N00390 -=0 ) CN @EXP-3.SCHEMATIC1(sch_1):INS374@SOURCE.VDC.Normal(chips)
+.ENDALIASES

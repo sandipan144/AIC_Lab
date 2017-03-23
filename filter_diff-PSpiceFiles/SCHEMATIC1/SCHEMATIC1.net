@@ -1,0 +1,4 @@
+* source FILTER_DIFF
+R_R1         N00904 N00892  1000000 TC=0,0 
+V_V1         N00892 N00916 DC 0Vdc AC 5Vac 
+C_C1         N00904 N00916  0.01u  TC=0,0 

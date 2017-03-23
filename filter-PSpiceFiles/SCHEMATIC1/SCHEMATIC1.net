@@ -1,0 +1,4 @@
+* source FILTER
+R_R1         0 N00136  1Meg TC=0,0 
+C_C1         N00131 N00136  0.01u  TC=0,0 
+V_V1         N00131 0 DC 0Vdc AC 5Vac 

@@ -1,0 +1,170 @@
+
+**** 02/17/17 12:41:56 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-b"  [ C:\USERS\SANDIPAN CHAKRABORTY\GOOGLE DRIVE\AIC_Lab\WeinsBridge-PSpiceFiles\SCHEMATIC1\b.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "b.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 100ms 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source WEINSBRIDGE
+X_U1         N00279 N00328 N000852 N000853 N00337 uA741
+R_R1         N00279 0  3.3k TC=0,0 
+C_C1         0 N00279  0.047u  TC=0,0 
+C_C2         N00307 N00279  0.047u  TC=0,0 
+R_R2         N00307 N00337  3.3k TC=0,0 
+R_R3         N00328 N00337  22k TC=0,0 
+V_V1         N000852 0 12Vdc
+V_V2         0 N000853 12Vdc
+X_R4         N00328 N00328 0 POT PARAMS: SET=0.5 VALUE=10.43k
+
+**** RESUMING b.cir ****
+.END
+
+**** 02/17/17 12:41:56 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-b"  [ C:\USERS\SANDIPAN CHAKRABORTY\GOOGLE DRIVE\AIC_Lab\WeinsBridge-PSpiceFiles\SCHEMATIC1\b.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.dx         
+          IS  800.000000E-18 
+          RS    1            
+
+
+**** 02/17/17 12:41:56 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-b"  [ C:\USERS\SANDIPAN CHAKRABORTY\GOOGLE DRIVE\AIC_Lab\WeinsBridge-PSpiceFiles\SCHEMATIC1\b.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.qx         
+               NPN             
+       LEVEL    1            
+          IS  800.000000E-18 
+          BF   93.75         
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 02/17/17 12:41:56 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-b"  [ C:\USERS\SANDIPAN CHAKRABORTY\GOOGLE DRIVE\AIC_Lab\WeinsBridge-PSpiceFiles\SCHEMATIC1\b.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00279)-263.1E-06 (N00307) 482.3E-06 (N00328)-243.8E-06 (N00337) 482.3E-06     
+
+(X_U1.6)-46.38E-09 (X_U1.7) 484.0E-06 (X_U1.8) 484.0E-06 (X_U1.9)    0.0000     
+
+(N000852)   12.0000                   (N000853)  -12.0000                       
+
+(X_U1.10)    -.6079                   (X_U1.11)   11.9600                       
+
+(X_U1.12)   11.9600                   (X_U1.13)    -.5940                       
+
+(X_U1.14)    -.5941                   (X_U1.53)   11.0000                       
+
+(X_U1.54)  -11.0000                   (X_U1.90) 33.01E-06                       
+
+(X_U1.91)   40.0000                   (X_U1.92)  -40.0000                       
+
+(X_U1.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.337E-03
+    V_V2        -1.337E-03
+    X_U1.vb     -4.638E-13
+    X_U1.vc      1.100E-11
+    X_U1.ve      1.100E-11
+    X_U1.vlim    3.301E-08
+    X_U1.vlp    -4.000E-11
+    X_U1.vln    -4.000E-11
+
+    TOTAL POWER DISSIPATION   3.21E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 02/17/17 12:41:56 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-b"  [ C:\USERS\SANDIPAN CHAKRABORTY\GOOGLE DRIVE\AIC_Lab\WeinsBridge-PSpiceFiles\SCHEMATIC1\b.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+

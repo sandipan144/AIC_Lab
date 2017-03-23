@@ -1,0 +1,168 @@
+
+**** 01/27/17 13:23:18 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-High Pass"  [ C:\OrCAD\OrCAD_16.6_Lite\tools\capture\Exp-3-PSpiceFiles\SCHEMATIC1\High Pass.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "High Pass.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\sanke\AppData\Roaming\SPB_16.6\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.AC DEC 10 100 100000
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source EXP-3
+X_U1         N00123 N00161 N00390 N00354 N00148 uA741
+R_R1         0 N00161  20k TC=0,0 
+R_R2         0 N00123  10k TC=0,0 
+R_R3         N00123 N00148  10k TC=0,0 
+C_C1         N00209 N00161  0.01u  TC=0,0 
+V_V1         N00209 0 DC 0Vdc AC 1Vac 
+V_V2         N00354 0 -12Vdc
+V_V3         N00390 0 12Vdc
+
+**** RESUMING "High Pass.cir" ****
+.END
+
+**** 01/27/17 13:23:18 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-High Pass"  [ C:\OrCAD\OrCAD_16.6_Lite\tools\capture\Exp-3-PSpiceFiles\SCHEMATIC1\High Pass.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.dx         
+          IS  800.000000E-18 
+          RS    1            
+
+
+**** 01/27/17 13:23:18 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-High Pass"  [ C:\OrCAD\OrCAD_16.6_Lite\tools\capture\Exp-3-PSpiceFiles\SCHEMATIC1\High Pass.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.qx         
+               NPN             
+       LEVEL    1            
+          IS  800.000000E-18 
+          BF   93.75         
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 01/27/17 13:23:18 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-High Pass"  [ C:\OrCAD\OrCAD_16.6_Lite\tools\capture\Exp-3-PSpiceFiles\SCHEMATIC1\High Pass.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00123)    -.0016 (N00148)    -.0024 (N00161)    -.0016 (N00209)    0.0000     
+
+(N00354)  -12.0000 (N00390)   12.0000 (X_U1.6) 230.5E-09 (X_U1.7)    -.0024     
+
+(X_U1.8)    -.0024 (X_U1.9)    0.0000 (X_U1.10)    -.6093                       
+
+(X_U1.11)   11.9600                   (X_U1.12)   11.9600                       
+
+(X_U1.13)    -.5954                   (X_U1.14)    -.5954                       
+
+(X_U1.53)   11.0000                   (X_U1.54)  -11.0000                       
+
+(X_U1.90)-81.73E-06                   (X_U1.91)   40.0000                       
+
+(X_U1.92)  -40.0000                   (X_U1.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+    V_V2         1.337E-03
+    V_V3        -1.337E-03
+    X_U1.vb      2.305E-12
+    X_U1.vc      1.100E-11
+    X_U1.ve      1.100E-11
+    X_U1.vlim   -8.173E-08
+    X_U1.vlp    -4.000E-11
+    X_U1.vln    -4.000E-11
+
+    TOTAL POWER DISSIPATION   3.21E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 01/27/17 13:23:18 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-High Pass"  [ C:\OrCAD\OrCAD_16.6_Lite\tools\capture\Exp-3-PSpiceFiles\SCHEMATIC1\High Pass.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+

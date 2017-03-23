@@ -1,0 +1,9 @@
+* source AIC EXPT 3
+X_U1         N02002 N02066 N02022 N02032 N02009 uA741
+V_V1         N02032 0 12Vdc
+V_V2         0 N02022 12Vdc
+R_R1         0 N02002  10k TC=0,0 
+R_R2         N02002 N02009  10k TC=0,0 
+R_R3         0 N02066  20k TC=0,0 
+C_C1         N02133 N02066  0.01u  TC=0,0 
+V_V3         N02133 0 DC 0Vdc AC 1Vac 

@@ -1,0 +1,9 @@
+* source EXP-3
+X_U1         N00123 N00161 N00390 N00354 N00144 uA741
+R_R1         0 N00161  20k TC=0,0 
+R_R2         0 N00123  10k TC=0,0 
+R_R3         N00123 N00144  10k TC=0,0 
+C_C1         N00209 N00161  0.01u  TC=0,0 
+V_V1         N00209 0 DC 0Vdc AC 1Vac 
+V_V2         N00354 0 -12Vdc
+V_V3         N00390 0 12Vdc
